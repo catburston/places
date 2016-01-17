@@ -1,1 +1,7 @@
-{{yield}}
+<h2>Location {{place.id}}: {{place.city}}, {{place.country}}</h2>
+{{#if isImageShowing }}
+  <p><img src={{place.image}} alt={{place.city}} width="500px"></p>
+  <button {{action "imageHide"}}>hide</button>
+{{else}}
+  <button {{action "imageShow"}}>image</button>
+{{/if}}
