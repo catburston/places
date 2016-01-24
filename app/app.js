@@ -13,6 +13,9 @@ App = Ember.Application.extend({
   Resolver
 });
 
+App.OWM = Ember.Object.extend();
+
+
 loadInitializers(App, config.modulePrefix);
 
 export default App;

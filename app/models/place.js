@@ -11,5 +11,11 @@ export default DS.Model.extend({
   owmid: attr(),
 
   weatherApi: function() {
-    return 'http://api.openweathermap.org/data/2.5/weather?lat=' + this.get('coordslat') + '&lon=' + this.get('coordslong') + '&appid=a5b0ff4a4b25591018779fd2112e44df'}.property('coordslat', 'coordslong')
+    var owmlink = 'http://api.openweathermap.org/data/2.5/weather?lat=' + this.get('coordslat') + '&lon=' + this.get('coordslong') + '&appid=a5b0ff4a4b25591018779fd2112e44df';
+    return owmlink;
+
+  }.property('coordslat', 'coordslong')
+
+
 });
+

@@ -1,7 +1,8 @@
-<h2>{{place.id}}: {{place.city}}, {{place.country}}</h2>
+<h2>{{place.city}}, {{place.country}}</h2>
 <p>Coordinates: {{place.coordslat}}, {{place.coordslong}}</p>
 <p>OWM ID: {{place.owmid}}</p>
 <p>OWM link: {{place.weatherApi}}</p>
+<p>{{place.weatherApi.weather.description}}</p>
 {{#if isMapShowing }}
   {{google-map latitude=place.coordslat longitude=place.coordslong}}
   <!--<p><img src={{place.image}} alt={{place.city}} width="500px"></p>-->
