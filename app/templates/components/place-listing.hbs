@@ -1,7 +1,11 @@
-<h2>Location {{place.id}}: {{place.city}}, {{place.country}}</h2>
-{{#if isImageShowing }}
-  <p><img src={{place.image}} alt={{place.city}} width="500px"></p>
-  <button {{action "imageHide"}}>hide</button>
+<h2>{{place.id}}: {{place.city}}, {{place.country}}</h2>
+<p>Coordinates: {{place.coordslat}}, {{place.coordslong}}</p>
+<p>OWM ID: {{place.owmid}}</p>
+<p>OWM link: {{place.weatherApi}}</p>
+{{#if isMapShowing }}
+  {{google-map latitude=place.coordslat longitude=place.coordslong}}
+  <!--<p><img src={{place.image}} alt={{place.city}} width="500px"></p>-->
+  <button {{action "mapHide"}}>hide hide</button>
 {{else}}
-  <button {{action "imageShow"}}>image</button>
+  <button {{action "mapShow"}}>show map</button>
 {{/if}}

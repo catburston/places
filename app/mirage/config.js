@@ -7,7 +7,10 @@ export default function() {
           attributes: {
             city: 'Kano',
             country: 'Nigeria',
-            image: 'https://upload.wikimedia.org/wikipedia/commons/f/f7/Wheeldon_Apartment_Building_-_Portland_Oregon.jpg'
+            image: 'https://upload.wikimedia.org/wikipedia/commons/f/f7/Wheeldon_Apartment_Building_-_Portland_Oregon.jpg',
+            coordslat: '12.00012',
+            coordslong: '8.51672',
+            owmid: '2335204'
           }
         }, {
           type: 'places',
@@ -15,19 +18,65 @@ export default function() {
           attributes: {
             city: 'Melbourne',
             country: 'Australia',
-            image: 'https://upload.wikimedia.org/wikipedia/commons/f/f7/Wheeldon_Apartment_Building_-_Portland_Oregon.jpg'
+            image: 'https://upload.wikimedia.org/wikipedia/commons/f/f7/Wheeldon_Apartment_Building_-_Portland_Oregon.jpg',
+            coordslat: "-37.813061",
+            coordslong: '144.944214',
+            owmid: '7839805'
           }
         }, {
           type: 'places',
           id: 3,
           attributes: {
+            city: 'Reading',
+            country: 'England',
+            image: 'https://upload.wikimedia.org/wikipedia/commons/f/f7/Wheeldon_Apartment_Building_-_Portland_Oregon.jpg',
+            coordslat: '51.450001',
+            coordslong: '-0.96667',
+            owmid: '3333184'
+          }
+        }, {
+          type: 'places',
+          id: 4,
+          attributes: {
             city: 'Cologne',
             country: 'Germany',
-            image: 'https://upload.wikimedia.org/wikipedia/commons/f/f7/Wheeldon_Apartment_Building_-_Portland_Oregon.jpg'
+            image: 'https://upload.wikimedia.org/wikipedia/commons/f/f7/Wheeldon_Apartment_Building_-_Portland_Oregon.jpg',
+            coordslat: '50.933331',
+            coordslong: '6.95',
+            owmid: '2886242'
+          }
+        }, {
+          type: 'places',
+          id: 5,
+          attributes: {
+            city: 'Barcelona',
+            country: 'Spain',
+            image: 'https://upload.wikimedia.org/wikipedia/commons/f/f7/Wheeldon_Apartment_Building_-_Portland_Oregon.jpg',
+            coordslat: '41.399422',
+            coordslong: '2.12804',
+            owmid: '6356055'
+          }
+        }, {
+          type: 'places',
+          id: 6,
+          attributes: {
+            city: 'Montpellier',
+            country: 'France',
+            image: 'https://upload.wikimedia.org/wikipedia/commons/f/f7/Wheeldon_Apartment_Building_-_Portland_Oregon.jpg',
+            coordslat: '43.611301',
+            coordslong: '3.8771',
+            owmid: '6454034'
           }
         }]
-      }
+      };
     });
+
+// {"_id":2335204,"name":"Kano","country":"NG","coord":{"lon":8.51672,"lat":12.00012}}
+// {"_id":7839805,"name":"Melbourne","country":"AU","coord":{"lon":144.944214,"lat":-37.813061}}
+// {"_id":3333184,"name":"Borough of Reading","country":"GB","coord":{"lon":-0.96667,"lat":51.450001}}
+// {"_id":2886242,"name":"Koeln","country":"DE","coord":{"lon":6.95,"lat":50.933331}}
+// {"_id":6356055,"name":"Barcelona","country":"ES","coord":{"lon":2.12804,"lat":41.399422}}
+// {"_id":6454034,"name":"Montpellier","country":"FR","coord":{"lon":3.8771,"lat":43.611301}}
 
   // These comments are here to help you get started. Feel free to delete them.
 

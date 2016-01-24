@@ -1,13 +1,13 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-	isImageShowing: false,
+  isMapShowing: false,
   actions: {
-    imageShow() {
-      this.set('isImageShowing', true);
+    mapShow() {
+      this.set('isMapShowing', true);
     },
-    imageHide() {
-      this.set('isImageShowing', false)
+    mapHide() {
+      this.set('isMapShowing', false);
     }
   }
 });
